@@ -37,7 +37,7 @@ in the root directory of this package for a working example of browser usage.
 Simply require it and use it.
 
 ```
-var modulify = require('../src/modulify.js');
+var modulify = require('modulify');
 var result = modulify.file( /** file path **/);
 // result will contain the modulified version of the source.
 ```
