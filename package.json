@@ -1,6 +1,6 @@
 {
   "name": "modulify",
-  "version": "0.1.0",
+  "version": "0.1.0-1",
   "description": "Generate nodejs modules from plain old javascript",
   "main": "./src/modulify.js",
   "directories": {
