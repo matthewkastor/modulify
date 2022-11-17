@@ -15,14 +15,14 @@ or, if you have node installed you can get it from npm
 ### In Browser
 
 Using this module in your browser is as simple as including both `src/modulify.js`
- and `node_modules/esprima/esprima.js` in the page, parsing the source code with esprima and calling `modulify.generateModuleString`. There is an example below.
+ and `node_modules/esprima/dist/esprima.js` in the page, parsing the source code with esprima and calling `modulify.generateModuleString`. There is an example below.
  It is much easier to use this code within nodejs and that is the recommended
  method.
 See [try it.html](http://matthewkastor.github.io/modulify/try%20it.html) 
 in the root directory of this package for a working example of browser usage.
 
 ```
-<script type="text/javascript" src="./node_modules/esprima/esprima.js"></script>
+<script type="text/javascript" src="./node_modules/esprima/dist/esprima.js"></script>
 <script type="text/javascript" src="./src/modulify.js"></script>
 <script type="text/javascript">
     var src = // get the source code as a string.
