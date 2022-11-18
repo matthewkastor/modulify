@@ -5,7 +5,7 @@
     window.modulify = window.modulify || {};
 
     window.modulify.utils = {
-        /// <summary></summary>
+        /// <summary>Namespace for modulify&amp;apos;s utility functions.</summary>
         /// <returns type="modulify.utils"/>
                 
         getNames: function(prev, curr) {

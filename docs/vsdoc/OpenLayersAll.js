@@ -25,9 +25,11 @@
     
 
     window.modulify = {
-        /// <summary></summary>
-        /// <field name="utils" type="">Namespace for modulify&apos;s utility functions.</field>
+        /// <summary>Namepsace for atropa&amp;apos;s modulify.</summary>
         /// <returns type="modulify"/>
+      
+        /// <field name="utils" type="">Namespace for modulify&apos;s utility functions.</field>
+        utils : {}, 
                 
         string: function(src) {
             /// <summary>Converts a string of source code into a commonjs module. **Caution** This
@@ -69,7 +71,7 @@
     window.modulify = window.modulify || {};
 
     window.modulify.utils = {
-        /// <summary></summary>
+        /// <summary>Namespace for modulify&amp;apos;s utility functions.</summary>
         /// <returns type="modulify.utils"/>
                 
         getNames: function(prev, curr) {

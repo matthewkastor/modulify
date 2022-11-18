@@ -8,12 +8,19 @@
     "test": "tests"
   },
   "dependencies": {
-    "esprima": ">=1.0.4",
-    "jasmine-node": ">=1.11.0"
+    "esprima": ">=1.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "atropa-jsformatter": "git+https://github.com/matthewkastor/atropa-jsformatter.git#gh-pages",
+    "atropa-jslint": "git+https://github.com/matthewkastor/atropa-jslint.git#master",
+    "jasmine-node": ">=1.11.0",
+    "jsdoc-toolkit": "git+https://github.com/matthewkastor/node-jsdoc-toolkit.git#fix-tests"
+  },
   "scripts": {
-    "test": "jasmine-node specs/"
+    "test": "jasmine-node specs/",
+    "lint": "atropa-jslint ./src/modulify.js",
+    "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/",
+    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./node_modules/jsdoc-toolkit/templates/vsdoc/ -r -s src/"
   },
   "repository": {
     "type": "git",

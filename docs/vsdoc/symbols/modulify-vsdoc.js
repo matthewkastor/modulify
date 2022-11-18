@@ -5,9 +5,11 @@
     
 
     window.modulify = {
-        /// <summary></summary>
-        /// <field name="utils" type="">Namespace for modulify&apos;s utility functions.</field>
+        /// <summary>Namepsace for atropa&amp;apos;s modulify.</summary>
         /// <returns type="modulify"/>
+      
+        /// <field name="utils" type="">Namespace for modulify&apos;s utility functions.</field>
+        utils : {}, 
                 
         string: function(src) {
             /// <summary>Converts a string of source code into a commonjs module. **Caution** This
